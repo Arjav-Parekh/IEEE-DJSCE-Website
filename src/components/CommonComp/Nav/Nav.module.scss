@@ -28,12 +28,25 @@
       justify-content: space-between;
       align-items: center;
       gap: 3rem;
-      
+
       .navElement{
         text-decoration: none;
         color: white;
         text-transform: uppercase;
       }
+      
+      .navElement:after{
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        background: #fff;
+        transition: width 0.3s ease-out;
+        width: 0;
+      }
+      .navElement:hover:after{
+          width: 100%; 
+        }
 
       .navEvents{
         border: 2px solid white;
