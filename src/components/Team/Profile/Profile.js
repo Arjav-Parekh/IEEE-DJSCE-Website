@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./Profile.module.scss";
 
-function Profile({ name, title, img, jrs }) {
+function Profile({ name, title, img, jrs, backColor }) {
 
     const ToolTipComp = () => {
 
@@ -22,7 +22,7 @@ function Profile({ name, title, img, jrs }) {
     return (
         <div className={styles.profile}>
             <div className={styles.profile__background}>
-                <img src={img} alt=""></img>
+                <img src={img} alt="" style={{"backgroundColor":backColor}}></img>
             </div>
             <ToolTipComp />
             <h3 className={styles.profile__name}>{name}</h3>
