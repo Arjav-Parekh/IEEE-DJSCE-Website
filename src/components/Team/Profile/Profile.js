@@ -21,8 +21,8 @@ function Profile({ name, title, img, jrs, backColor }) {
 
     return (
         <div className={styles.profile}>
-            <div className={styles.profile__background}>
-                <img src={img} alt="" style={{"backgroundColor":backColor}}></img>
+            <div className={styles.profile__background} style={{ "backgroundColor": backColor }}>
+                <img src={img} alt=""></img>
             </div>
             <ToolTipComp />
             <h3 className={styles.profile__name}>{name}</h3>
