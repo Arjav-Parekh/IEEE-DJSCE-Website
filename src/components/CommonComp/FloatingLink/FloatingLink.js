@@ -15,7 +15,7 @@ function FloatingLink() {
     return (
         <motion.div
             className={styles.icons}
-            initial={{ x: '-100vw' }} animate={{ x: 0 }}
+            initial={{ x: '-200vw' }} animate={{ x: 0 }}
             transition={{ type: 'spring', stiffness: 30 }}
         >
             {
