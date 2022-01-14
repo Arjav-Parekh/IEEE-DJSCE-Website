@@ -11,9 +11,7 @@ import OurEvents from './OurEvents/OurEvents';
 import OurVision from './OurVision/OurVision';
 import UpcomingEvent from './UpcomingEvent/UpcomingEvent';
 
-const Home = () => {
-
-  document.body.style.backgroundColor = "black";
+const Home = () => {  
 
   return (
     <div className={styles.home}>

@@ -18,6 +18,8 @@ import img_arjav from './Images/Tech_Arjav.svg'
 import img_manan from './Images/Tech_Manan.svg'
 import img_muskan from './Images/Pubs_Muskaan.svg'
 import img_dhairya from './Images/Events_Dhairya.svg'
+import Scrollpop from '../CommonComp/ScrollPop/ScrollPop';
+import FloatingLink from '../CommonComp/FloatingLink/FloatingLink';
 
 function Team() {
 
@@ -69,6 +71,8 @@ function Team() {
         </div>
       </div>
       <ScrollTop />
+      <Scrollpop />
+      <FloatingLink />
       <Footer />
     </div>
   )

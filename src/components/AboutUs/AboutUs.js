@@ -5,6 +5,8 @@ import Footer from '../CommonComp/Footer/Footer'
 import ScrollTop from '../CommonComp/ScrollTop/ScrollTop'
 import styles from "./AboutUs.module.scss";
 import aimImg from "../../images/gitup.jpg";
+import Scrollpop from '../CommonComp/ScrollPop/ScrollPop'
+import FloatingLink from '../CommonComp/FloatingLink/FloatingLink'
 
 const AboutUs = () => {
 
@@ -35,6 +37,8 @@ const AboutUs = () => {
 
       </div>
       <ScrollTop />
+      <Scrollpop />
+      <FloatingLink />
       <Footer />
     </div>
   )

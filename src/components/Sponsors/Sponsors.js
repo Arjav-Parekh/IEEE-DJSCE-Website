@@ -13,6 +13,9 @@ import ddm_img from "../../images/Sponsors/Dudeme.png"
 import prb_img from "../../images/Sponsors/Prep Bytes.png"
 import spb_img from "../../images/Sponsors/spinbot_logo.jpg"
 import syb_img from "../../images/Sponsors/SYBGEN-1.png"
+import ScrollTop from '../CommonComp/ScrollTop/ScrollTop'
+import Scrollpop from '../CommonComp/ScrollPop/ScrollPop'
+import FloatingLink from '../CommonComp/FloatingLink/FloatingLink'
 
 const data = [
   {
@@ -89,6 +92,9 @@ const Sponsors = () => {
           ))
         }
       </div>
+      <ScrollTop />
+      <Scrollpop />
+      <FloatingLink />
       <Footer />
     </div>
   )
