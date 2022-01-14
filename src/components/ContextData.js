@@ -17,6 +17,12 @@ import prb_img from "../images/Sponsors/Prep Bytes.png"
 import spb_img from "../images/Sponsors/spinbot_logo.jpg"
 import syb_img from "../images/Sponsors/SYBGEN-1.png"
 
+// Event
+import event2 from "../images/Events/2.jpeg";
+import event3 from "../images/Events/3.jpeg";
+import event4 from "../images/Events/4.jpeg";
+import event5 from "../images/Events/5.jpeg";
+
 export const Context = createContext();
 
 export const DataProvider = (props) => {
@@ -94,6 +100,10 @@ export const DataProvider = (props) => {
           name: "SYBGEN"
         }
       ],
+    },
+
+    event:{
+      imgGrid:[event2, event3, event4, event5],
     },
 
     contentForCarousel: {

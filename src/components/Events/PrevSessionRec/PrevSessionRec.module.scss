@@ -1,6 +1,14 @@
-.prevSessionRec{
-  iframe{
-    // width: 100%;
-    // height: 30rem;
+.prevSessionRec {
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .prevSessionRecTitle{
+    font-size: 3rem;
+  }
+
+  .recWrap > *{
+    width: 100%;
+    height: 500px;
   }
 }

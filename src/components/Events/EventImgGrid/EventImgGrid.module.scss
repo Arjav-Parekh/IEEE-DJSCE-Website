@@ -1,0 +1,18 @@
+.eventImgGrid{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .eventImgGridTitle{
+        font-size: 3rem;
+    }
+    .imgGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .imgFluid{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

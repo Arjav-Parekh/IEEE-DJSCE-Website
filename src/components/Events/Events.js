@@ -7,6 +7,7 @@ import PrevSessionRec from './PrevSessionRec/PrevSessionRec';
 import Footer from '../CommonComp/Footer/Footer';
 import Scrollpop from '../CommonComp/ScrollPop/ScrollPop';
 import FloatingLink from '../CommonComp/FloatingLink/FloatingLink';
+import EventImgGrid from './EventImgGrid/EventImgGrid';
 
 const Events = () => {
   return (
@@ -15,6 +16,7 @@ const Events = () => {
       <div className={cx(styles.eventsBody)}>
         <div className={styles.eventsTitle}>Events</div>
         <PrevSessionRec />
+        <EventImgGrid />
       </div>
       <ScrollTop />
       <Scrollpop />
