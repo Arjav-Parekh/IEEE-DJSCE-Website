@@ -22,21 +22,20 @@ import img_dhairya from './Images/Events_Dhairya.svg'
 function Team() {
 
   const people = [
-    [img_dev, 'Dev Manek', 'Chairperson', [], img_cherry, 'Cherry Bhatt', 'Vice-Chairperson', []],
-    [img_ambar, 'Ambar Mehta', 'Secretary', [], img_naman, 'Naman Sanghavi', 'Secretary', []],
-    [img_keta, 'Keta Suthar', 'Treasurer', []],
-    [img_smeet, 'Smeet Veera', 'Creatives Head', ["Khushi Sanghvi", "Vrisha Shah", "Hitakshi Shirude"], img_parth, 'Parth Shah', 'Media Head', ["Krish Panchal", "Nandini Shetty"]],
-    [img_krish, 'Krish Shah', 'Marketing Head', ["Divya Suresh", "Deep Dholakia"], img_vatsal, 'Vatsal Tolia', 'Marketing Head', ["Divya Suresh", "Deep Dholakia"]],
-    [img_russel, 'Russel Lobo', 'Editorial Head', ["Yash Brahmabhatt", "Krisha Lakhani", "Sanika Ardekar"]],
-    [img_arjav, 'Arjav Parekh', 'Technical Head', ["Devesh Agarwal", "Shubh Shah", "Prachet Shah", "Glen Dhingra"], img_manan, 'Manan Doshi', 'Technical Head', ["Devesh Agarwal", "Shubh Shah", "Prachet Shah", "Glen Dhingra"]],
-    [img_muskan, 'Muskan Jain', 'Publicity Head', ["Nupur Parmar", "Gautam Malpani"], img_dhairya, 'Dhairya Parikh', 'Events Head', ["Dev Mehta", "Krushang", "Ishan Shah"]],
+    [img_dev, 'Dev Manek', 'Chairperson', [], img_cherry, 'Cherry Bhatt', 'Vice-Chairperson', [], "#f5b700", "#de0152"],
+    [img_ambar, 'Ambar Mehta', 'Secretary', [], img_naman, 'Naman Sanghavi', 'Secretary', [], "#0000ff", "#ff8629"],
+    [img_keta, 'Keta Suthar', 'Treasurer', [], "#bee1e6"],
+    [img_smeet, 'Smeet Veera', 'Creatives Head', ["Khushi Sanghvi", "Vrisha Shah", "Hitakshi Shirude"], img_parth, 'Parth Shah', 'Media Head', ["Krish Panchal", "Nandini Shetty"], "#deff0a", "#0aefff"],
+    [img_krish, 'Krish Shah', 'Marketing Head', ["Divya Suresh", "Deep Dholakia"], img_vatsal, 'Vatsal Tolia', 'Marketing Head', ["Divya Suresh", "Deep Dholakia"], "#ec0868", "#fcd5ce"],
+    [img_russel, 'Russel Lobo', 'Editorial Head', ["Yash Brahmabhatt", "Krisha Lakhani", "Sanika Ardekar"], "#00c1ff"],
+    [img_arjav, 'Arjav Parekh', 'Technical Head', ["Devesh Agarwal", "Shubh Shah", "Prachet Shah", "Glen Dhingra"], img_manan, 'Manan Doshi', 'Technical Head', ["Devesh Agarwal", "Shubh Shah", "Prachet Shah", "Glen Dhingra"], "#ffb4a2", "#faedcd"],
+    [img_muskan, 'Muskan Jain', 'Publicity Head', ["Nupur Parmar", "Gautam Malpani"], img_dhairya, 'Dhairya Parikh', 'Events Head', ["Dev Mehta", "Krushang", "Ishan Shah"], "#bee1e6", "#dee2e6"],
   ]
 
   const TeamTileComp = () => {
     const comp = (
       people.map((people, index) => {
-
-        if ((index + 1) % 3 === 0) {
+        if ((index + 1) % 3 === 0) {        
           return (
             <div className={styles.teams__profile}>
               <Profile img={people[0]} name={people[1]} title={people[2]} jrs={people[3]} />
@@ -49,7 +48,7 @@ function Team() {
               <Profile img={people[0]} name={people[1]} title={people[2]} jrs={people[3]} />
               <Profile img={people[4]} name={people[5]} title={people[6]} jrs={people[7]} />
             </div>
-          )
+          )       
         }
       }))
 

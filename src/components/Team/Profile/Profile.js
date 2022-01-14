@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./Profile.module.scss";
 
-function Profile({ name, title, img, jrs }) {
+function Profile({ name, title, img, jrs, backColor, newBackCol = ["#C8C0ED", "#dee2e6", "#9F9CAD", "#B6B1C9"] }) {
 
     const ToolTipComp = () => {
 
@@ -21,7 +21,7 @@ function Profile({ name, title, img, jrs }) {
 
     return (
         <div className={styles.profile}>
-            <div className={styles.profile__background}>
+            <div className={styles.profile__background} style={{ "backgroundColor": newBackCol[Math.floor(Math.random()*(newBackCol.length))] }}>
                 <img src={img} alt=""></img>
             </div>
             <ToolTipComp />

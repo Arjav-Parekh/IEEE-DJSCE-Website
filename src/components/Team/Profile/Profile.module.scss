@@ -1,60 +1,60 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 
+  .profile__name {
+    font-size: 1.5rem;
+  }
 
-.profile{    
+  .profile__title {
+    font-size: 0.95rem;
+  }
+
+  .profile__background {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;     
-    gap: .5rem;
+    align-items: center;
+    height: 15rem;
+    width: 15rem;
+    // background-color: gray;
+    border-radius: 5%;
 
-    .profile__name{
-        font-size: 1.5rem;
+    img {
+      width: 12.85rem;
+      height: 14rem;
+      // background-color: #ff9500;
     }
+  }
+  .profile__name {
+    font-weight: bold;
+  }
+  .profile__tooltip {
+    position: absolute;
+    visibility: hidden;
+    // display: none;
+    height: fit-content;
+    width: 10rem;
+    margin-left: 28rem;
+    padding: 1.5rem;
 
-    .profile__title{
-        font-size: .95rem;
-    }
+    background: rgb(82, 195, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(82, 195, 255, 1) 0%,
+      rgba(156, 4, 255, 1) 66%
+    );
+    border-radius: 2rem;
 
-    .profile__background{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 15rem;
-        width: 15rem;
-        background-color: gray;
-        border-radius: 15%;
-
-        img{
-             
-            width: 14rem;
-            height: 14rem;
-        }
-    }
-    .profile__name{
-        font-weight: bold;
-    }
-    .profile__tooltip{
-        position:absolute;
-        visibility: hidden;      
-        // display: none;  
-        height: fit-content;
-        width: 10rem;
-        margin-left: 28rem;
-        padding: 1.5rem;
-
-        background: rgb(82,195,255);
-        background: linear-gradient(180deg, rgba(82,195,255,1) 0%, rgba(156,4,255,1) 66%);
-        border-radius: 2rem;       
-
-        font-weight: 600;
-        z-index: -1; 
-
-    }
+    font-weight: 600;
+    z-index: -1;
+  }
 }
-.profile:hover{    
-    
-    .profile__tooltip{
-        visibility: visible;
-        // display: block;
-    }
+.profile:hover {
+  .profile__tooltip {
+    visibility: visible;
+    // display: block;
+  }
 }
