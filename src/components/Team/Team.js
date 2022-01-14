@@ -38,15 +38,15 @@ function Team() {
         if ((index + 1) % 3 === 0) {        
           return (
             <div className={styles.teams__profile}>
-              <Profile img={people[0]} name={people[1]} title={people[2]} jrs={people[3]} backColor={people[4]} />
+              <Profile img={people[0]} name={people[1]} title={people[2]} jrs={people[3]} />
             </div>
           )
         }
         else {
           return (
             <div className={styles.teams__profile}>
-              <Profile img={people[0]} name={people[1]} title={people[2]} jrs={people[3]} backColor={people[8]} />
-              <Profile img={people[4]} name={people[5]} title={people[6]} jrs={people[7]} backColor={people[9]}/>
+              <Profile img={people[0]} name={people[1]} title={people[2]} jrs={people[3]} />
+              <Profile img={people[4]} name={people[5]} title={people[6]} jrs={people[7]} />
             </div>
           )       
         }
