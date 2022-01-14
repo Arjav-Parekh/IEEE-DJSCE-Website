@@ -1,6 +1,7 @@
 import React, { createContext } from 'react'
 import navLogoImg from "../images/IEEELogo.svg";
 import testImg from "../images/homePageEventsCarousel.svg";
+import upcomingEventPoster from "../images/gitup_homeEvents.png"
 
 export const Context = createContext();
 
@@ -8,6 +9,13 @@ export const DataProvider = (props) => {
   const baseData = {
     name: "IEEE",
     navLogo: navLogoImg,    
+
+    home: {
+      upcomingEvent:{
+        posterImg: upcomingEventPoster,
+        link: '#',
+      }
+    },
 
     contentForCarousel: {
       2017: [
