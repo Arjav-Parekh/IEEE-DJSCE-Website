@@ -1,5 +1,50 @@
-$footerHeight: 800px;
+.footer {
+  margin-top: 70px;
+  background: linear-gradient(#0000 1%, #2d1f6a);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  .footerDiv {
+    padding: 30px 130px;
+    .footerBrand {
+      padding-top: 50px;
+      padding-bottom: 30px;
+      text-align: center;
+    }
 
-.footer{
-  height: $footerHeight;
+    .footerElements {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-top: 30px;
+      text-align: center;
+
+      .footerLinks {
+        font-size: 1.1rem;
+        padding-top: 10px;
+
+        .footerRouteLink {
+          a {
+            color: white;
+            text-decoration: none;
+          }
+          cursor: pointer;
+          transition: all 0.1s ease-out;
+          &:hover {
+            font-weight: 700;
+          }
+        }
+
+        & > div {
+          padding-top: 5px;
+        }
+      }
+    }
+
+    .copyContent {
+      padding-top: 40px;
+      .footerCopyright {
+        padding-top: 30px;
+        text-align: center;
+      }
+    }
+  }
 }
