@@ -8,6 +8,9 @@ const Footer = () => {
 
   const [baseData] = useContext(Context);
   const IEEELogoImg = baseData.navLogo;
+  const secretaries = baseData.footer.secretaries;
+  const IEEE_email = baseData.footer.email;
+  const collegeAddress = baseData.footer.collegeAddress;
 
   const footerAboutLinks = [
     { name: "About Us", link: "aboutUs" },
@@ -42,16 +45,24 @@ const Footer = () => {
           <div>
             <h1>Contact</h1>
             <div className={styles.footerLinks}>
-              <div>Email</div>
-              <div>Ambar Mehta: </div>
-              <div>Naman Sanghvi: </div>
+              <div
+                onClick={() => window.open(`mailto:${IEEE_email}`, "_blank")}
+                className={styles.footerRouteLink}
+              >
+                {IEEE_email}
+              </div>
+              {
+                secretaries.map((item, key) => (
+                  <div key={key}>{item.name}: {item.contact}</div>
+                ))
+              }
             </div>
           </div>
 
           <div>
             <h1>Address</h1>
             <div className={styles.footerLinks}>
-              <div>Dwarkadas J. Sanghvi College of Engineering, Vile Parle West, Mumbai-400056</div>
+              <div>{collegeAddress}</div>
             </div>
           </div>
 
@@ -60,7 +71,7 @@ const Footer = () => {
         <div className={styles.copyContent}>
           <div><hr /></div>
           <div className={styles.footerCopyright}>
-            &copy; 2020 DJSCE IEEEBainwaves - All Rights Reserved
+            &copy; 2022 DJSCE IEEEBainwaves - All Rights Reserved
             {/* <br /> */}
           </div>
         </div>

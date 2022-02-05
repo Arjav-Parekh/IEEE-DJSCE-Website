@@ -28,10 +28,10 @@ export const Context = createContext();
 export const DataProvider = (props) => {
   const baseData = {
     name: "IEEE",
-    navLogo: navLogoImg,    
+    navLogo: navLogoImg,
 
     home: {
-      upcomingEvent:{
+      upcomingEvent: {
         posterImg: upcomingEventPoster,
         link: '#',
       }
@@ -102,8 +102,8 @@ export const DataProvider = (props) => {
       ],
     },
 
-    event:{
-      imgGrid:[event2, event3, event4, event5],
+    event: {
+      imgGrid: [event2, event3, event4, event5],
     },
 
     contentForCarousel: {
@@ -128,7 +128,7 @@ export const DataProvider = (props) => {
           content: 'We attempt too capitalize on the abundant talent and ideas and give others a platform to showcase their perceptions.',
           img: testImg,
         },
-      ], 
+      ],
       2018: [
         {
           title: 'PIXELATED 2018',
@@ -150,7 +150,7 @@ export const DataProvider = (props) => {
           content: 'We attempt too capitalize on the abundant talent and ideas and give others a platform to showcase their perceptions.',
           img: testImg,
         },
-      ],       
+      ],
       2021: [
         {
           title: 'PIXELATED 2021',
@@ -172,8 +172,17 @@ export const DataProvider = (props) => {
           content: 'We attempt too capitalize on the abundant talent and ideas and give others a platform to showcase their perceptions.',
           img: testImg,
         },
-      ], 
+      ],
     },
+
+    footer: {
+      collegeAddress: "Dwarkadas J. Sanghvi College of Engineering, Vile Parle West, Mumbai 400056",
+      email: "contact@ieeedjsce.com",
+      secretaries: [
+        { name: "Ambar Mehta", contact: "+91 96195 25418" },
+        { name: "Naman Sanghvi", contact: "+91 99208 38055" },
+      ],
+    }
 
   };
 
