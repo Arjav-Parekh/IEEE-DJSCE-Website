@@ -30,6 +30,16 @@ export const DataProvider = (props) => {
     name: "IEEE",
     navLogo: navLogoImg,
 
+    floatingLinks: {
+      socialLinks: [
+        { name: "Instagram", linkTo: "https://www.instagram.com/ieee_djscoe", iconClass: "fab fa-instagram", color: "" },
+        { name: "LinkedIn", linkTo: "https://www.linkedin.com/companies/IEEE-Brainwaves", iconClass: "fab fa-linkedin-in", color: "" },
+        { name: "Twitter", linkTo: "https://twitter.com/ieeebrainwaves", iconClass: "fab fa-twitter", color: "" },
+        { name: "Medium", linkTo: "https://ieeebrainwaves.medium.com/", iconClass: "fab fa-medium-m", color: "" },
+        { name: "Gmail", linkTo: "mailto:contact@ieeedjsce.com", iconClass: "fas fa-envelope", color: "" },
+      ],
+    },
+
     home: {
       upcomingEvent: {
         posterImg: upcomingEventPoster,

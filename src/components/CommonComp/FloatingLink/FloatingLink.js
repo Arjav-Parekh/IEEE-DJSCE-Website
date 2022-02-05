@@ -1,16 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import styles from './FloatingLink.module.scss'
+import { Context } from '../../ContextData';
 <link rel="stylesheet" href="https://kit.fontawesome.com/a28f231496.js" />
 
 function FloatingLink() {
-    const socialLinks = [
-        { name: "Instagram", linkTo: "#", iconClass: "fab fa-instagram", color: "" },
-        { name: "LinkedIn", linkTo: "#", iconClass: "fab fa-linkedin-in", color: "" },
-        { name: "Twitter", linkTo: "#", iconClass: "fab fa-twitter", color: "" },
-        { name: "Medium", linkTo: "#", iconClass: "fab fa-medium-m", color: "" },
-        { name: "Gmail", linkTo: "#", iconClass: "fas fa-envelope", color: "" },
-    ]
+
+    const [baseData] = useContext(Context);
+    const socialLinks = baseData.floatingLinks.socialLinks;
 
     return (
         <motion.div
@@ -20,7 +17,7 @@ function FloatingLink() {
         >
             {
                 socialLinks.map((item, key) => (
-                    <a href={item.linkTo} key={key}>
+                    <a href={item.linkTo} key={key} target="_blank">
                         <i className={item.iconClass}></i>
                     </a>
                 ))
