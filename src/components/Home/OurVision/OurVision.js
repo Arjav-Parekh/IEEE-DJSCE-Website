@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./OurVision.module.scss";
-import img from "./Vision.png"
 import Vision from "./Vision/Vision";
 
 
@@ -9,19 +8,19 @@ export default function OurVision() {
 
     const data = [
         {
-            title: "Capitalize",
-            caption: "We attempt to capitalize on the abundant talent and ideas and give others a platform to showcase their perceptions.",
-            img: img,
+            title: "Opportunity",
+            caption: "We attempt to create better opportunities for a better tomorrow.",
+            icon: "fas fa-tasks",
         },
         {
-            title: "Capitalize",
-            caption: "We attempt to capitalize on the abundant talent and ideas and give others a platform to showcase their perceptions.",
-            img: img,
+            title: "Education",
+            caption: "We attempt to educate in and around people for a healthy future.",
+            icon: "fab fa-graduation-cap",
         },
         {
-            title: "Capitalize",
-            caption: "We attempt to capitalize on the abundant talent and ideas and give others a platform to showcase their perceptions.",
-            img: img,
+            title: "Technology",
+            caption: "Promoting and educating people about the newest technology for the new tomorrow.",
+            icon: "fa-solid fa-microchip",
         },
     ]
 
@@ -32,7 +31,7 @@ export default function OurVision() {
                 {
                     data.map((item, key) => (
                         <Vision
-                            img={item.img} key={key}
+                            icon={item.icon} key={key}
                             title={item.title}
                             caption={item.caption}
                         />

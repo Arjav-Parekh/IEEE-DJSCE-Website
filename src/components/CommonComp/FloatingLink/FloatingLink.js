@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import styles from './FloatingLink.module.scss'
 import { Context } from '../../ContextData';
-<link rel="stylesheet" href="https://kit.fontawesome.com/a28f231496.js" />
 
 function FloatingLink() {
 
