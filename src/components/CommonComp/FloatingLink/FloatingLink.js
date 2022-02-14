@@ -17,7 +17,7 @@ function FloatingLink() {
         >
             {
                 socialLinks.map((item, key) => (
-                    <a href={item.linkTo} key={key} target="_blank">
+                    <a href={item.linkTo} key={key} target="_blank" rel="noreferrer" >
                         <i className={item.iconClass}></i>
                     </a>
                 ))
