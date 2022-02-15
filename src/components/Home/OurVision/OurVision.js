@@ -2,8 +2,6 @@ import React from "react";
 import styles from "./OurVision.module.scss";
 import Vision from "./Vision/Vision";
 
-
-
 export default function OurVision() {
 
     const data = [
@@ -15,12 +13,12 @@ export default function OurVision() {
         {
             title: "Education",
             caption: "We attempt to educate in and around people for a healthy future.",
-            icon: "fab fa-graduation-cap",
+            icon: "fas fa-graduation-cap",
         },
         {
             title: "Technology",
             caption: "Promoting and educating people about the newest technology for the new tomorrow.",
-            icon: "fa-solid fa-microchip",
+            icon: "fas fa-microchip",
         },
     ]
 
